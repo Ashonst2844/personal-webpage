@@ -1,0 +1,92 @@
+:root {
+    --main : #0f0f0f;
+    --main-2 : #292929;
+    --accent : #e20000;
+    --accent-2 : #b60000;
+    --text : rgb(73, 73, 73);
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    font-size: 12px;
+    color: var(--text);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#status-section {
+    grid-area: 1 / 1 / 11 / 3;
+    float: left;
+}
+#profile {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent);
+    box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.2);
+}
+#profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid var(--main);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+#profile img:hover {
+    scale: 1.1;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.4);
+}
+#myInfo {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+#myInfo .infoLeft {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 2px;
+    line-height: 20px;
+}
+#myInfo .infoRight {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    line-height: 20px;
+}
+
+#banner-section {
+    grid-area: 1 / 3 / 4 / 11;
+    background-color: blue;
+    float: right;
+}
+#content-section {
+    grid-area: 4 / 3 / 11 / 11;
+    background-color: yellow;
+    float: right;
+}
