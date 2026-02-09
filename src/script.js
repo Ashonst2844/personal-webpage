@@ -19,6 +19,8 @@ fetch("src/data/website_data.json")
         });
         
         // WEBSITE COUNTER HERE!
+        const counter = document.getElementById("website-counter")
+        counter.textContent = website
 
     })
     .catch(error => console.error("Error Load Data!!", error));
@@ -37,10 +39,10 @@ fetch("src/data/music_data.json")
                 <button class="playButton"><i class="fa-solid fa-play"></i></button>
                 `,
             parent.appendChild(product)
+            music++;
             
         });
         
-        // Add event listeners after elements are created
         const buttons = document.getElementsByClassName("playButton")
         const audios = document.getElementsByClassName("audio")
 
@@ -58,6 +60,11 @@ fetch("src/data/music_data.json")
                 }
             });
         }
+
+        // MUSIC COUNTER HERE!
+        const counter = document.getElementById("music-counter")
+        counter.textContent = music
+
     })
     .catch(error => console.error("Error Load Data!!", error))
 

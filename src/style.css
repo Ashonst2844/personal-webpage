@@ -21,6 +21,22 @@
         width: var(--target);
     }
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+@keyframes cardShow {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    } to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 * {
     margin: 0;
@@ -139,6 +155,32 @@ body {
     background-position: center;
     padding: 10px;
     box-shadow: inset 0px -16px 10px var(--main);
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+}
+#banner-section .counter{
+    flex: 0 0 calc(50% - 30px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#banner-section .counter h1 {
+    font-size: 6rem;
+    color: white;
+    width: 100%;
+    animation: normal "fadeIn" 1s;
+}
+#banner-section .counter h2 {
+    font-size: 2rem;
+    color: white;
+    width: 100%;
+    animation: normal "fadeIn" 2s;
 }
 
 /* CONTENT SECTION */
@@ -161,6 +203,7 @@ body {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    animation: normal "cardShow" 1s;
 }
 .showCase .webProducts:hover {
     outline: 1px solid var(--accent);
@@ -174,6 +217,7 @@ body {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
+    animation: normal "cardShow" 1s;
 }
 .showCase .musicProducts:hover {
     outline: 1px solid var(--accent);
