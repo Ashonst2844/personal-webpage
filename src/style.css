@@ -23,6 +23,8 @@ body {
     background-color: var(--main);
     display: flex;
 }
+
+/* STATUS SECTION */
 #status-section {
     width: 20%;
     height: 100%;
@@ -89,7 +91,7 @@ body {
 #skillSet .skill .skillMeter {
     width: 100%;
     height: 8px;
-    background-color: var(--main-2);
+    background-color: var(--main);
     padding: 2px;
     border-radius: 30px;
     margin-block: 5px;
@@ -100,22 +102,65 @@ body {
     border-radius: 30px;
 }
 
-
+/* SIDER SECTION */
 #sider {
     width: 80%;
-    height: 100%;
+    height: 100vh;
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
+
+/* BANNER SECTION */
 #banner-section {
     width: 100%;
-    height: 30%;
+    height: 30vh;
     background-image: url(img/banner.jpeg);
     background-size: cover;
     background-position: center;
     padding: 10px;
     box-shadow: inset 0px -16px 10px var(--main);
 }
+
+/* CONTENT SECTION */
 #content-section {
     width: 100%;
-    height: 70%;
     float: right;
+    padding: 10px;
+}
+#show-case {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#show-case .products {
+    flex: 0 0 calc(33.33% - 10px);
+    background-color: var(--main-2);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#show-case .products:hover {
+    outline: 1px solid var(--accent);
+    background-color: #3a3a3a;
+}
+#show-case .products h2 {
+    font-size: 2rem;
+    color: white;
+}
+#show-case .products p {
+    font-size: 1.5em;
+    margin: 10px;
+    font-style: italic;
+}
+#show-case .products a {
+    width: 100%;
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-align: center;
+}
+#show-case .products a:hover {
+    color: var(--accent);
 }
