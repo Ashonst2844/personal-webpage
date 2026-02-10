@@ -68,3 +68,14 @@ fetch("src/data/music_data.json")
     })
     .catch(error => console.error("Error Load Data!!", error))
 
+let nav_state  = false;
+function nav() {
+    var nav_links = document.querySelectorAll(".navLinks");
+    if(!nav_state) {
+        nav_state=true;
+        nav_links.forEach(link => link.style.display = "flex");
+    } else {
+        nav_state=false;
+        nav_links.forEach(link => link.style.display = "none");
+    }
+}
