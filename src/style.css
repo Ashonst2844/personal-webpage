@@ -69,6 +69,7 @@ body {
     justify-content: center;
     height: 100%;
     flex-wrap: wrap;
+    animation: normal "fadeIn" 3s;
 }
 #navigation {
     width: 50px;
@@ -95,10 +96,12 @@ body {
 }
 #navigation:hover {
     background-color: var(--accent-2);
+    box-shadow: 1px 1px 20px var(--accent);
 }
 #nav-section a:hover {
     outline: 1px solid var(--accent);
     background-color: #3a3a3a;
+    box-shadow: 1px 1px 20px var(--accent);
 }
 #navigation i, #nav-section a i {
     font-size: 3rem;
@@ -187,6 +190,7 @@ body {
     border-radius: 30px;
     animation: normal "progressBar" 1s;
     width: var(--target);
+    box-shadow: 4px 4px 10px var(--accent);
 }
 
 /* SIDER SECTION */
@@ -305,6 +309,7 @@ body {
 }
 .showCase .webProducts a:hover {
     color: var(--accent);
+    text-shadow: 1px 1px 5px var(--accent);
 }
 .showCase .musicProducts div {
     width: 100%;
@@ -325,7 +330,8 @@ body {
     border-radius: 10px;
 }
 .showCase .musicProducts button:hover {
-    background-color: #292929;
+    box-shadow: 1px 1px 20px var(--accent);
+    background-color: var(--accent);
 }
 .showCase .musicProducts button i {
     color: white;
