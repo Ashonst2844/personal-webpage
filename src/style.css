@@ -6,36 +6,11 @@
     --text : rgb(124, 124, 124);
 }
 
-@keyframes profileVisible {
-    from {
-        opacity: 0;
-        scale: 0;
-    } to {
-        opacity: 1;
-        scale: 1;
-    }
-}
-@keyframes progressBar {
-    from {
-        width: 0;
-    } to {
-        width: var(--target);
-    }
-}
 @keyframes fadeIn {
     from {
         opacity: 0;
     } to {
         opacity: 1;
-    }
-}
-@keyframes cardShow {
-    from {
-        opacity: 0;
-        transform: translateX(10px);
-    } to {
-        opacity: 1;
-        transform: translateX(0);
     }
 }
 
@@ -140,7 +115,6 @@ body {
     border-radius: 50%;
     border: 4px solid var(--main);
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
-    animation: normal "profileVisible" 1s;
 }
 #profile img:hover {
     scale: 1.1;
@@ -195,7 +169,6 @@ body {
     height: 100%;
     background-color: var(--accent);
     border-radius: 30px;
-    animation: normal "progressBar" 1s;
     width: var(--target);
     box-shadow: 0 0 10px var(--accent-2);
 }
@@ -295,7 +268,6 @@ body {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    animation: normal "cardShow" 1s;
 }
 .showCase .webProducts:hover, .showCase .musicProducts:hover {
     background-color: #3a3a3a;
@@ -308,7 +280,6 @@ body {
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    animation: normal "cardShow" 1s;
 }
 .showCase .webProducts h2 {
     font-size: 2rem;
