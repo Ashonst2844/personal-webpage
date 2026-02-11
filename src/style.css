@@ -51,6 +51,7 @@
     color: var(--text);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
+    scrollbar-width: none;
 }
 body {
     width: 100vw;
@@ -122,6 +123,8 @@ body {
     background-color: var(--main-2);
     box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.4);
     z-index: 50;
+    position: absolute;
+    transform: translateX(-100%);
 }
 #profile {
     width: 100%;
@@ -130,7 +133,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--accent);
-    box-shadow: inset 0px -16px 5px var(--main-2);
 }
 #profile img {
     width: 100px;
@@ -195,15 +197,39 @@ body {
     border-radius: 30px;
     animation: normal "progressBar" 1s;
     width: var(--target);
-    box-shadow: 4px 4px 10px var(--accent);
+    box-shadow: 0 0 10px var(--accent-2);
+}
+#sider-control {
+    position: fixed;
+    margin: 20px;
+    z-index: 100;
+}
+#sider-control button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+    gap: 20px;
+}
+#sider-control button:hover {
+    background-color: var(--accent-2);
+}
+#sider-control button i {
+    font-size: 2em;
+    color: white;
 }
 
 /* SIDER SECTION */
 #sider {
-    width: 80%;
+    width: 100%;
     height: 100vh;
     overflow-x: scroll;
     scrollbar-width: none;
+    float: right;
 }
 
 /* BANNER SECTION */

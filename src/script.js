@@ -85,7 +85,7 @@ fetch("src/data/skills.json")
     })
     .catch(error => console.error("Error Load Data!!", error));
 
-let nav_state  = false;
+let nav_state = false;
 function nav() {
     var nav_links = document.querySelectorAll(".navLinks");
     if(!nav_state) {
@@ -94,5 +94,25 @@ function nav() {
     } else {
         nav_state=false;
         nav_links.forEach(link => link.style.display = "none");
+    }
+}
+
+let sider_state = true;
+function sider() {
+    var sider_container = document.querySelector("#status-section");
+    var main_container = document.querySelector("#sider");
+    var side_button = document.querySelector("#sider-control i");
+    if(!sider_state) {
+        sider_state=true;
+        sider_container.style.transform = "translateX(-100%)";
+        main_container.style.width = "100%";
+        main_container.style.transform = "translateX(0)";
+        side_button.style.transform = "rotate(0)";
+    } else {
+        sider_state=false;
+        sider_container.style.transform = "translateX(0)";
+        main_container.style.width = "80%"
+        main_container.style.transform = "translate(25%)"
+        side_button.style.transform = "rotate(180deg)";
     }
 }
