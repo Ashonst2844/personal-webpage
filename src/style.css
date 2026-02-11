@@ -49,7 +49,8 @@
     transition: all 0.3s ease-in-out;
     font-size: 10px;
     color: var(--text);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
 }
 body {
     width: 100vw;
@@ -117,6 +118,8 @@ body {
     height: 100%;
     float: left;
     background-color: var(--main-2);
+    box-shadow: 8px 8px 14px rgba(0, 0, 0, 0.4);
+    z-index: 50;
 }
 #profile {
     width: 100%;
@@ -330,4 +333,75 @@ body {
 }
 .showCase .musicProducts button i {
     color: white;
+}
+
+/*FOOTER SECTION*/
+#footer-section {
+    height: 300px;
+    width: 100%;
+    float: right;
+    background-color: var(--main-2);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#footer-section .footerDiv {
+    width: 50%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.leftFooter h2, .rightFooter div h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: left;
+}
+.leftFooter ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+.leftFooter ul a {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftFooter ul a:hover {
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 20px var(--accent);
+}
+.leftFooter ul a i {
+    font-size: 2em;
+    color: white;
+}
+.rightFooter div {
+    width: 100%;
+    height: 50%;
+}
+.rightFooter div ul {
+    width: 100%;
+    height: 100%;
+}
+.rightFooter div ul li {
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+}
+#fooer-section .copyrightFooter {
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+}
+#footer-section .copyrightFooter span {
+    font-size: 1.5em;
 }
