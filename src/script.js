@@ -68,6 +68,23 @@ fetch("src/data/music_data.json")
     })
     .catch(error => console.error("Error Load Data!!", error))
 
+fetch("src/data/skills.json")
+    .then(response => response.json())
+    .then(data => {
+        const parent = document.querySelector("#skillSet");
+        data.forEach((item) => {
+            const product = document.createElement("div");
+            product.classList.add("skill")
+            product.innerHTML = `
+                <span>${item.name} ${item.range}%</span>
+                <div class="skillMeter"><div style="--target:${item.range}%;" title="${item.name}"></div></div>
+                <hr style="width: 90%; border: 1px solid var(--text);">
+                `,
+            parent.appendChild(product)
+        });
+    })
+    .catch(error => console.error("Error Load Data!!", error));
+
 let nav_state  = false;
 function nav() {
     var nav_links = document.querySelectorAll(".navLinks");
@@ -78,20 +95,4 @@ function nav() {
         nav_state=false;
         nav_links.forEach(link => link.style.display = "none");
     }
-}
-
-let personal_state = false;
-var container = document.querySelector("#personal-section");
-function personal() {
-    if(!personal_state) {
-        personal_state=true;
-        container.style.display = "flex";
-    } else {
-        personal_state=false;
-        container.style.display = "none";
-    }
-}
-function closePersonal() {
-    personal_state=false;
-    container.style.display = "none";
 }

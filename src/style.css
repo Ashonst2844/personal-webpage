@@ -68,9 +68,12 @@ body {
     margin: 20px;
     display: flex;
     justify-content: center;
-    height: 100%;
+    height: 70px;
     flex-wrap: wrap;
     animation: normal "fadeIn" 3s;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 20px;
 }
 #navigation {
     width: 50px;
@@ -81,19 +84,18 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 5px;
+    gap: 20px;
 }
 #nav-section a {
     width: 50px;
     height: 50px;
     background-color: var(--main-2);
-    border-radius: 10px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
     outline: 1px solid black;
-    margin: 5px;
 }
 #navigation:hover {
     background-color: var(--accent-2);
@@ -222,7 +224,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4),
-                inset -1px -1px 10px white;
+                inset 0 0 5px white;
     padding: 20px;
     display: flex;
     justify-content: center;

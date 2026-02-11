@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "HTML",
+        "range" : 80
+    },
+    {
+        "name" : "JavaScript",
+        "range" : 40
+    },
+    {
+        "name" : "CSS",
+        "range" : 60
+    },
+    {
+        "name" : "Music Producing",
+        "range" : 30
+    },
+    {
+        "name" : "IoT",
+        "range" : 80
+    },
+    {
+        "name" : "Guitar",
+        "range" : 20
+    }
+]
