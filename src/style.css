@@ -104,7 +104,7 @@ body {
     box-shadow: 1px 1px 20px var(--accent);
 }
 #navigation i, #nav-section a i {
-    font-size: 3rem;
+    font-size: 1.5rem;
     color: white;
 }
 #nav-section a {
@@ -266,8 +266,7 @@ body {
     flex-wrap: wrap;
     animation: normal "cardShow" 1s;
 }
-.showCase .webProducts:hover {
-    outline: 1px solid var(--accent);
+.showCase .webProducts:hover, .showCase .musicProducts:hover {
     background-color: #3a3a3a;
 }
 .showCase .musicProducts {
@@ -279,10 +278,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     animation: normal "cardShow" 1s;
-}
-.showCase .musicProducts:hover {
-    outline: 1px solid var(--accent);
-    background-color: #3a3a3a;
 }
 .showCase .webProducts h2 {
     font-size: 2rem;

@@ -79,3 +79,19 @@ function nav() {
         nav_links.forEach(link => link.style.display = "none");
     }
 }
+
+let personal_state = false;
+var container = document.querySelector("#personal-section");
+function personal() {
+    if(!personal_state) {
+        personal_state=true;
+        container.style.display = "flex";
+    } else {
+        personal_state=false;
+        container.style.display = "none";
+    }
+}
+function closePersonal() {
+    personal_state=false;
+    container.style.display = "none";
+}
