@@ -18,5 +18,10 @@
         "title": "Lover",
         "description": "A hope that will never happen again in my life (maybe)",
         "link": "https://ashonst2844.github.io/love/"
+    },
+    {
+        "title": "Personal Page",
+        "description": "Actually... This Page. And This My first deploy personal page",
+        "link": "https://personal-webpage-chi-ten.vercel.app/"
     }
 ]
