@@ -105,14 +105,10 @@ function sider() {
     if(!sider_state) {
         sider_state=true;
         sider_container.style.transform = "translateX(-100%)";
-        main_container.style.width = "100%";
-        main_container.style.transform = "translateX(0)";
         side_button.style.transform = "rotate(0)";
     } else {
         sider_state=false;
         sider_container.style.transform = "translateX(0)";
-        main_container.style.width = "80%"
-        main_container.style.transform = "translate(25%)"
         side_button.style.transform = "rotate(180deg)";
     }
 }
