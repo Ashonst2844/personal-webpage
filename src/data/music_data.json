@@ -22,5 +22,13 @@
     {
         "title": "The Fallen",
         "url": "src/sound/Masagus - The Fallen.mp3"
+    },
+    {
+        "title": "Last Midnight",
+        "url": "src/sound/Masagus - Last Midnight.mp3"
+    },
+    {
+        "title": "Mastery",
+        "url": "src/sound/Masagus - Mastery.mp3"
     }
 ]
